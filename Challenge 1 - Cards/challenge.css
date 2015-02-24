@@ -1,0 +1,81 @@
+body {
+	background-color: #e0e0e0;
+	color: #222222;
+}
+
+section {
+	position: relative;
+	top: 50px;
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.card {
+	display: inline-block;
+	width: 40%;
+	height: 100px;
+	background-color: #ffffff;
+	margin: 5px;
+	position: relative;
+	border: 1px solid #d5d5d5;
+	box-shadow: 1px 5px 10px 1px rgba (100, 100, 100, 0.8);
+}
+/* try and get the box-shadow to work*/
+/*try your margins as percentages*/
+
+
+/* chris's simple solution for #1
+section{
+	margin: 0 auto;
+	width: 800px;
+	white-space: nowrap;
+}
+
+.block {
+	display: inline-block;
+	width: 390px;
+	height: 100px;
+	margin: 4px:  
+	background: #777;
+}
+*/
+
+
+/* swap this in above
+	width:  40%;
+	padding :100%;
+	margin: 5%;
+*/
+
+
+/* for float solution, go back to display: block;
++ float: left;
++ fiddle with margins ~25px auto;
+
+
+>>*** execute this
+section {
+	margin:; 25px auto;
+	width: 50%;
+	height: 100%;
+	background #bbb;
+}
+
+section::after{
+	display: block;
+	height: 1px;
+	content: " ";
+	width: 100%;
+	clear: both;
+	float: none;
+}
+
+.block: {
+	display: block;
+	width: 40%
+	padding-bottom: 40%;
+	margin: 5%;
+	background #777;
+	float: left;
+}
